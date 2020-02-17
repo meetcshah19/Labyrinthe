@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <img style="-webkit-user-select: none;margin: auto;display:none;" id="maze" src="maze.gif">
+    <div id="contain">
+        <div id="ga">
+            <canvas id="canvas" width="922" height="922"></canvas>
+        </div>
+        <div id="ma">
+            <div id="gameon">
+                <div id="title">Labyrinthe</div>
+                <div id="timer"></div>
+                <button class="button" id="pause" onclick="pause()">Pause</button>
+                <button class="button" onclick="exit()">Exit</button>
+            </div>
+            <div id="leaderboard">
+                <div id="title">Labyrinthe</div>
+                <div class="text2" id="lbvals"></div>
+                <button class="button" onclick="back()">Back</button>
+            </div>
+            <div id="name">
+                <div id="title">Labyrinthe</div>
+                <div class="text">Enter Your Name:</div>
+                <div class="textbox"><input type="text" id="namets" style="width: 100%;
+                height:10%;
+  margin: 8px 0;
+  box-sizing: border-box;"></div>
+                <button class="button" onclick="store()">Submit</button>
+            </div>
+            <div id="startscreen">
+                <div id="title">Labyrinthe</div>
+                <button class="button" onclick="draw()">Start</button>
+                <button class="button" onclick="lb()">Leaderboard</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
