@@ -39,9 +39,12 @@ function draw() {
     time = 0;
     canvas = document.getElementById('canvas');
     ctx = canvas.getContext('2d');
+
     // var maze = document.getElementById('maze');
     ctx.drawImage(maze, 0, 0, 922, 922);
-
+    
+    
+    
     var data = ctx.getImageData(20, 20, 882, 1).data;
     ctx.fillStyle = "red";
     var c = 0;
@@ -201,6 +204,7 @@ function pause() {
     }
 }
 function store() {
+    maze.src = "res/" + Math.ceil((Math.random() * 500)).toString();
     console.log(typeof localStorage.getItem('data'));
     var xyz;
     if (localStorage.getItem('data') != null) {
